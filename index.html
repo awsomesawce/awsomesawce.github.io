@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Initialization Test</title>
-  <meta name="description" content=" Test page ">
+  <meta name="description" content="Clever use of HTML and CSS to post a decent looking page. ">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta property="og:title" content="">
@@ -21,35 +21,33 @@
    <!-- Zilla Sans! -->
    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Alegreya+Sans&family=Inconsolata&family=Merriweather&family=Merriweather+Sans&family=Noto+Serif&family=Nunito&family=Nunito+Sans&family=Open+Sans&family=Quattrocento&family=Quattrocento+Sans&family=Roboto&family=Roboto+Mono&family=Roboto+Slab&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="current.css">
+   <script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "<h3>Hello World!</h3>";
+}
+</script>
    <style>
-    body {
-      font-family: 'Merriweather Sans', 'Roboto', 'Open Sans', sans-serif;
-      font-size: 1rem;
-      margin: 10px;
 
-    }
-    h1 {
-      font-size: 40px;
-      font-family: 'Noto Serif', 'Merriweather', 'Alegreya', serif;
-      text-decoration-style: solid;
-      text-decoration: underline;
-      font-weight: 700;
-    }
-    footer {
-      background-color: darkslategrey;
-      color: aliceblue;
-    }
-    #top-nav {
-      background: rgb(157, 246, 165);
-      margin-bottom: 15px;
-    }
     #columns div {
       padding: 10px;
+    }
+    #color {
+      background: linear-gradient(#AFD3E8CB,#6399CCFF);
+    }
+    #multi-column {
+      justify-content: center;
+      text-align: left;
+    }
+    #modal-area {
+      font-family: 'Inconsolata', monospace;
     }
     </style>
   </head>
   <body>
-    <header>
+
+<button class="btn btn-primary" onclick="myFunction()">Try it</button>
+    <header id="demo"></header>
       <nav class="nav" id="top-nav">
         <a href="#" class="nav nav-link">example</a>
         <a href="#" class="nav nav-link">example</a>
@@ -57,10 +55,46 @@
         <a href="#" class="nav nav-link">example</a>
         <a href="#" class="nav nav-link">example</a>
       </nav>
-    </header>
+    
     <div class="container text-center">
       <h1>Welcome to my site!</h1>
       <p>This is just to test out the Github pages platform without using Jekyll.</p>
+
+<div class="container" id="modal-area">
+  <h2>Modal Example</h2>
+  <!-- Button to Open the Modal -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+    Open amazing modal!
+  </button>
+
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Welcome to my Modal!</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          Thank you for reading this modal!  This is where the body of the modal belongs.  It's nice in this modal, is it not?
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close this modal!</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+<br />
+<hr />
       <div class="row" id="columns">
         <div class="col-4 border rounded"><h2>This site is built by hand</h2>
           <p>And by hand I mean by using HTML and CSS while also using <a title="Bootstrap is awesome" class="linky" href="https://getbootstrap.com">Bootstrap</a>, <a href="https://code.jquery.com">JQuery</a>.  These dependencies are delivered to the browser by way of <abbr title="Content Delivery Network">CDN</abbr>.  With <b>Bootstrap</b>, you can add really great web components and put them together however you'd like.</div>
@@ -82,8 +116,26 @@
           </div>
         <div class="col-4 border rounded">Content can be <i>styled</i> by simply using Bootstrap CSS classes which integrate JQuery in producing certain effects like collapsing content, buttons that do different stuff, responsive nav bars, and all sorts of stuff like that.</div>
       </div>
+      <article class="container" id="color">
+        Here is gonna be some more stuff that looks cool, maybe an image or whatever.
+        I decided to make this section an <code>&lt;article&gt;</code>.
+        <h2><strong>The Boys</strong> on Amazon Prime is amazing!  Next on my list is gonna be <strong>Hunters</strong>, the one with Al Pacino.</h2>
+        <div class="row" id="multi-column">
+        <p class="lead alert alert-success">The Boys is getting quite perverted</p>
+        <p class="col-md-8">Every damn episode introduces some perverted idea.  And they changed it a lot from the original comic.  Got some weird ass Nazi origins to it too.  But the heros are pretty kickass, meaning <b>The Boys</b> themselves.  Practically none of the "superheroes" are actually good.  They're perverted versions of the standard superhero tropes.</p>
+        <p class="col-md-4">Wow they do some stupid shit though, like sneaking around in the light instead of the dark.</p>
+        <p class="col-md-4">The producer must like Billy Joel a lot because they play his songs all the time!</p>
+        <p class="col-sm-8">Ok so in this weird ass universe, they have the <em>superheroes</em> doing press work and speeches and marketing campaigns like all the time.  How do they have time to do all that when they’re supposed to be <strong>saving the world</strong> or at least ** saving america**?  I’m just wondering when the hell they’re gonna start saving people.<br>
+There’s not a ton of actual combat in this show.  It’s mainly just exposition.</p>
+<h3 class="col-sm-6">I’m gonna use this document to point out all the conflicts and flaws present in this show</h3>
+<p class="col-sm-6">Then, I’m gonna output it into html by using StackEdit’s easy-to-use export feature.  It doesn’t even require me to download as an html file, I can just copy it as html.</p>
+</div>
+
+
+      </article>
     </div>
     <footer><i>Copyright Carl Capodice 2020</i></footer>
+    
   <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
   </body>

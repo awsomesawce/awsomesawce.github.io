@@ -39,21 +39,48 @@
       background-color: darkslategrey;
       color: aliceblue;
     }
+    #top-nav {
+      background: rgb(157, 246, 165);
+      margin-bottom: 15px;
+    }
+    #columns div {
+      padding: 10px;
+    }
     </style>
   </head>
   <body>
+    <header>
+      <nav class="nav" id="top-nav">
+        <a href="#" class="nav nav-link">example</a>
+        <a href="#" class="nav nav-link">example</a>
+        <a href="#" class="nav nav-link">example</a>
+        <a href="#" class="nav nav-link">example</a>
+        <a href="#" class="nav nav-link">example</a>
+      </nav>
+    </header>
     <div class="container text-center">
       <h1>Welcome to my site!</h1>
       <p>This is just to test out the Github pages platform without using Jekyll.</p>
-      <div class="row">
+      <div class="row" id="columns">
         <div class="col-4 border rounded"><h2>This site is built by hand</h2>
-          <p>And by hand I mean by using HTML and CSS while also using <a title="Bootstrap is awesome" class="linky">Bootstrap</a>, <a href="https://code.jquery.com">JQuery</a>.  These dependencies are delivered to the browser by way of <abbr title="Content Delivery Network">CDN</abbr>.  With <b>Bootstrap</b>, you can add really great web components and put them together however you'd like.</div>
+          <p>And by hand I mean by using HTML and CSS while also using <a title="Bootstrap is awesome" class="linky" href="https://getbootstrap.com">Bootstrap</a>, <a href="https://code.jquery.com">JQuery</a>.  These dependencies are delivered to the browser by way of <abbr title="Content Delivery Network">CDN</abbr>.  With <b>Bootstrap</b>, you can add really great web components and put them together however you'd like.</div>
         <div class="col-8 border"><h2>As you can see, column 2 is a lot bigger than one and three</h2>
           <p>That's because the class is <code>"col-8"</code> and the other ones are <code>col-4's</code>.
 
             <br />
-            <p class="small">Working on integrating with Jekyll and adding/creating custom themes for it or a different <abbr title="Static Site Generator">SSG</abbr>, like Gatsby or <a href="https://gohugo.io">Hugo</a>.</div>
-        <div class="col-4 border rounded">Content can be styled by simply using Bootstrap CSS classes which integrate JQuery in producing certain effects like collapsing content, buttons that do different stuff, responsive nav bars, and all sorts of stuff like that.  It's easy to use, which is probably why it's the most used web framework on the web, besides <strong>Wordpress</strong> maybe.</div>
+            <p class="small">Working on integrating with Jekyll and adding/creating custom themes for it or a different <abbr title="Static Site Generator">SSG</abbr>, like Gatsby or <a href="https://gohugo.io">Hugo</a>.</p>
+            <p>Some goals for this site:</p>
+            <ul>
+              <li>
+                Integrate with an SSG.  <span class="small">List of SSGs <a href="https://staticgen.com">here</a>.</span>
+              </li>
+              <li>
+                Experiment with different layouts and themes using <a href="https://themestr.app"><b>Themestrapp</b></a> and/or other tools.
+              </li>
+              <li>Learn <strong>Vim...</strong></li>
+            </ul>
+          </div>
+        <div class="col-4 border rounded">Content can be <i>styled</i> by simply using Bootstrap CSS classes which integrate JQuery in producing certain effects like collapsing content, buttons that do different stuff, responsive nav bars, and all sorts of stuff like that.</div>
       </div>
     </div>
     <footer><i>Copyright Carl Capodice 2020</i></footer>

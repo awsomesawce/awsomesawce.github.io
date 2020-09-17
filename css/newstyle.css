@@ -1,0 +1,107 @@
+/*
+
+This is a CSS comment!
+You can make CSS comments multi line.
+
+There are interesting colors available: Tomato, MediumSeaGreen, DodgerBlue, SlateBlue, LightGray
+
+CSS/HTML support 140 standard color names
+
+Here is a link to a reference to the color names:
+
+https://www.w3schools.com/colors/colors_names.asp
+
+AliceBlue is a neat color, so is Azure and Beige
+*/
+
+body {
+    background-color: hsl(0deg 11% 63%);
+    display: block;
+    margin: 20px;
+}
+/* I changed cursive to a neat little font called Pacifico
+*/
+.text-center-heading {
+    text-align: center;
+    font-size: 78px;
+    font-family: 'VT323', monospace;
+}
+
+#cursive {
+    font-family: 'Pacifico', cursive;
+}
+#cool {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-left: 100px;
+    padding-right: 40px;
+    float:right;
+    width:35%;
+}
+#merry {
+    font-family: 'Merriweather', serif;
+}
+.para {
+    color: rgba(28, 65, 107, 0.603);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+#foot {
+    color: azure;
+    background-color: navy;
+    text-align: right;
+    font-family: 'Pacifico' , cursive;
+    /*
+    text-shadow: aquamarine;
+    */
+    font-size: 0.8rem;
+    font-weight: 300;
+    box-shadow: -6px 4px 5px 0px black;
+}
+.new {
+    font-family: 'VT323', monospace;
+    font-size: 2rem;
+}
+#lorem {
+    font-size: 3rem;
+    font-weight: 700;
+    /* this property doesn't seem to do anything with this font */
+    font-stretch: expanded;
+}
+#flex-container {
+  display: flex;
+  flex-flow: row-row-reverse wrap;
+  margin-left: 40px;
+
+}
+#flex-item {
+  width: 15%;
+  height: 100px;
+  margin: 0 8px;
+  padding: 2px;
+  border-style: solid;
+  border-radius: 20px;
+  border-width:5px;
+  text-align:center;
+  justify-content:center;
+}
+.container {
+  border-radius: 18px;
+  border-style:groove;
+  margin: 0px 40px;
+  padding: 25px;
+  font-family: 'Source Sans Pro', sans-serif;
+
+}
+article {
+  justify-content:space-around;
+  padding: 50px;
+  line-height: 1.5rem;
+  font-size: 16pt;
+  font-family: Helvetica;
+}
+article p {
+  font-weight:400;
+  font-family: 'Source Sans Pro';
+}
+wrapper {
+    
+}

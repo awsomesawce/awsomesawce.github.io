@@ -1,0 +1,10 @@
+{
+  "name": "awsomesawce",
+  "version": "0.0.1",
+  "description": "New yarn package and this is a test",
+  "main": "index.html",
+  "repository": "https://github.com/awsomesawce/awsomesawce.github.io.git",
+  "author": "Carl C <69673640+awsomesawce@users.noreply.github.com>",
+  "license": "MIT",
+  "private": false
+}

@@ -6,6 +6,11 @@
 <title>My first javascript</title>
 <link rel="stylesheet" href="css/my_first_js_style.css">
 <script src="myFirstJs.js"></script>
+<style>
+  #myfirstimg {
+    width: 600px;
+  }
+</style>
 </head>
 <body>
 
@@ -26,6 +31,12 @@ Click me to display Date and Time.</button>
   <h1>A Web Page</h1>
   <p id="demoThree">A Paragraph</p>
   <button type="button" onclick="changePara()">Try it</button>
+
+<div class="container">
+  <h2>Here's the error I get about <code>"myFirstJs.js"</code></h2>
+  <br />
+  <img id="myfirstimg" src="img/error_screenshot.jpg" alt="Screenshot of the js error" class="border-info img-fluid">
+</div>
 
 <script>
 document.getElementById("demoTwo").innerHTML = "My Second JavaScript";

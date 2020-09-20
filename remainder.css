@@ -1,0 +1,13 @@
+#columns div {
+  padding: 10px;
+}
+#color {
+  background: linear-gradient(#AFD3E8CB,#6399CCFF);
+}
+#multi-column {
+  justify-content: center;
+  text-align: left;
+}
+#modal-area {
+  font-family: 'Inconsolata', monospace;
+}

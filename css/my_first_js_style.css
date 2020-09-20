@@ -1,0 +1,46 @@
+body {
+  font-family: 'Ubuntu', 'Roboto';
+  font-size: 16px;
+  font-size: 1rem;
+  margin:100px;
+  padding:100px;
+  background-color: beige;
+  justify-content:center;
+  justify-items:flex-start;
+  align-items:center;
+  text-align:center;
+}
+main {
+  /* Put whatever you want here */
+  justify-content: space-evenly;
+  
+}
+button {
+  font-family: 'DejaVu Sans Mono', 'Courier New', monospace;
+  background-color: lightblue;
+  border-radius: 20px;
+  position: relative;
+  text-align: center;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'DejaVu Serif', 'Roboto Slab', 'Noto Serif', 'Times New Roman', serif;
+  border:cadetblue 0.03rem dashed;
+  text-align: center;
+  background: aquamarine;
+  color: darkblue;
+  margin-top:auto;
+  margin-bottom:30px;
+  padding:0.85rem 2rem;
+}
+code,pre {
+  font-family: 'Fira Code', 'Ubuntu Mono', 'Roboto Mono', 'Courier Prime', 'DejaVu Sans Mono', monospace;
+}
+article {
+  font-family: 'Zilla Slab', 'Roboto Slab', serif;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}

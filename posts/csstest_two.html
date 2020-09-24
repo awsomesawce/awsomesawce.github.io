@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="This is a very minimal approach to learning CSS grid and flex using
+    highly-popular frameworks like Bootstrap 4, JQuery 3.5, Normalize, FontAwesome, Modernizr.  I'm learning as I go ">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>CSS Grid playground (hopefully)</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <!-- bootstrap css first, then normalize, then main, then stylesgrid and any other custom css. -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" rel="stylesheet" />
+  <!-- Zilla Sans! -->
+  <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alegreya&family=Alegreya+Sans&family=Inconsolata&family=Merriweather&family=Merriweather+Sans&family=Noto+Serif&family=Nunito&family=Nunito+Sans&family=Open+Sans&family=Quattrocento&family=Quattrocento+Sans&family=Roboto&family=Roboto+Mono&family=Roboto+Slab&family=Source+Sans+Pro&display=swap"
+    rel="stylesheet">
+  <!-- Local stylesheets -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <!-- <link rel="stylesheet" href="flexing.css" />
+  <link rel="stylesheet" href="slab.css" />
+  <link rel="stylesheet" href="stylesgrid.css" /> -->
+  <link rel="stylesheet" href="D:\Carl\OneDrive\webdev\New\css\bootstrap_shero.css">
+  <link rel="stylesheet" href="mdn_grid.css" />
+  <link rel="stylesheet" href="css/sans.css">
+  <style>
+    .wrap {
+      justify-content: space-between;
+    }
+
+    .wrap div {
+      border-style: ridge;
+    }
+
+  </style>
+
+</head>
+
+<body>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item active" aria-current="page">Home</li>
+      <li class="breadcrumb-item"><a href="index.html">index.html</a></li>
+      <li class="breadcrumb-item">Nothing yet</li>
+    </ol>
+  </nav>
+  <header>
+    <p class="small text-center">Please let this work</p>
+  </header>
+  <h2 class="text-center">Introducing...THE GRID!</h2>
+  <hr />
+  <section class="wrap">
+    <div class="item item1">example</div>
+    <div class="item item2">example</div>
+    <div class="item item3">example</div>
+    <div class="item item4">example</div>
+    <div class="item item5">example</div>
+    <div class="item item6">example</div>
+  </section>
+  <section class="gridwrap" title="This is where the grid goes">
+    <div class="container gridwrap">
+      <div class="item item1">item1</div>
+      <div class="item item2">item2</div>
+      <div class="item item3">item3</div>
+      <div class="item item4">item4</div>
+      <div class="item item5">item5</div>
+      <div class="item item6">item6</div>
+    </div>
+  </section>
+  <!--I'm gonna go back to VSCodium for a bit. -->
+
+  <br />
+  <h2>Grid two</h2>
+  <hr />
+  <div class="wrapper">
+    <div class="one">one</div>
+    <div class="two">two</div>
+    <div class="three">three</div>
+    <div class="four">Four</div>
+    <!-- <div class="five">five</div>
+      <div class="six">six</div> -->
+  </div>
+  <div class="flex-wrapper">
+    <div class="flex">
+      <h2>Hmm...</h2>
+      <p>What else should I test on this page?</p>
+      <p>Random random raandomnesss
+      </p>
+    </div>
+    <div class="flex flexone">
+      This is flex one
+    </div>
+    <div class="flex flextwo">
+      This is flex two hohohoo
+    </div>
+    <div class="flex flexthree">
+      This is flex three wowowo
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"
+    integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous">
+  </script>
+
+</body>
+
+</html>

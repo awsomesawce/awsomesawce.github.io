@@ -1,0 +1,95 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Initialization Test</title>
+  <meta name="description" content="Clever use of HTML and CSS to post a decent looking page. ">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content=""> -->
+
+  <!-- Remote CDN Bootstrap -->
+   <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
+   <link rel="stylesheet" href="css/bootstrap.css">
+   <link rel="stylesheet" href="css/bootstrap_shero.css">
+   <link  href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"  rel="stylesheet"  />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+   <!-- Zilla Sans! -->
+   <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Alegreya+Sans&family=Inconsolata&family=Merriweather&family=Merriweather+Sans&family=Noto+Serif&family=Nunito&family=Nunito+Sans&family=Open+Sans&family=Quattrocento&family=Quattrocento+Sans&family=Roboto&family=Roboto+Mono&family=Roboto+Slab&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="current.css">
+   <link rel="stylesheet" href="remainder.css">
+   <script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "<h3>This site is under constant development!</h3>";
+}
+</script>
+  </head>
+  <body>
+
+<button class="btn btn-primary" onclick="myFunction()">Click Me!</button>
+    <header id="demo"></header>
+      <nav class="nav" id="top-nav">
+        <a href="about.html" class="nav nav-link disabled">about.html</a>
+        <a href="index.html" class="nav nav-link active">index.html</a>
+        <a href="another.html" class="nav nav-link disabled">another.html</a>
+        <a href="README.md" class="nav nav-link">readme.md</a>
+        <a href="buttons.html" class="nav nav-link">buttons.html</a>
+      </nav>
+
+    <div class="container text-center">
+      <h1>Welcome to my site!</h1>
+      <p>This is just to test out the Github pages platform without using Jekyll.</p>
+      <p class="small">Be aware this site is under <i>constant development</i>.  It can and <i>will</i> change over time.</p>
+    </div>
+<div class="container text-center" id="modal-area">
+  <h2>Modal Example</h2>
+  <!-- Button to Open the Modal -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+    Open amazing modal!
+  </button>
+
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Welcome to my Modal!</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          Thank you for reading this modal!  This is where the body of the modal belongs.  <p class="small">Be aware that this site is under constant development and <i>will</i> change over time</p>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close this modal!</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+<br />
+<hr />
+  <div class="container">
+     <h2 class="animate__animated animate__bounceIn text-info">New Post</h2>
+     <p class="lead">I'm learning new things about <code>webdev</code> every day.</p>
+
+
+    </div>
+    <footer><i>Copyright Carl Capodice 2020</i></footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
+  </body>
+  </html>

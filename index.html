@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Initialization Test</title>
+  <title>Welcome to my GitHub Site</title>
   <meta name="description" content="Clever use of HTML and CSS to post a decent looking page. ">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -24,8 +24,8 @@
    <link rel="stylesheet" href="current.css">
    <link rel="stylesheet" href="remainder.css">
    <script>
-function myFunction() {
-  document.getElementById("demo").innerHTML = "<h3>This site is under constant development!</h3>";
+function seeMessage() {
+  document.getElementById("demo").innerHTML = "<h3>This site is under constant development!</h3> <br /> <p>Added new linear gradient and reverted css back to original Bootstrap Theme!</p>";
 }
 </script>
 <style>
@@ -37,8 +37,8 @@ function myFunction() {
   </head>
   <body>
 
-<button class="btn btn-primary" onclick="myFunction()">Click Me!</button>
-    <header id="demo"></header>
+<button class="btn btn-primary" onclick="seeMessage()">Click Me!</button>
+    <header class="text-center" id="demo"></header>
       <nav class="nav" id="top-nav">
         <a href="about.html" class="nav nav-link disabled">about.html</a>
         <a href="index.html" class="nav nav-link active">index.html</a>
@@ -48,7 +48,7 @@ function myFunction() {
       </nav>
 
     <div class="container text-center">
-      <h1>Welcome to my site!</h1>
+      <h1>Welcome to my GitHub site!</h1>
       <p>This is just to test out the Github pages platform without using a static site generator.</p>
       <p>This is a very simple site that I have up temporarily while I experiment with different developer tools.</p>
       <p>My top 4 repositories I'm currently developing in are: <span class="small">(some might be private)</span></p>

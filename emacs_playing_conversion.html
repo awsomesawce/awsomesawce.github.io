@@ -1,0 +1,140 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Emacs Tips and Experiments</title>
+  <meta name="description" content="Playing around with my new-found Emacs skills! ">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content=""> -->
+
+  <!-- Remote CDN Bootstrap -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+   <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+   <!-- <link rel="stylesheet" href="css/bootstrap_shero.css"> -->
+   <link  href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"  rel="stylesheet"  />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+   <!-- Zilla Sans! -->
+   <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Alegreya+Sans&family=Inconsolata&family=Merriweather&family=Merriweather+Sans&family=Noto+Serif&family=Nunito&family=Nunito+Sans&family=Open+Sans&family=Quattrocento&family=Quattrocento+Sans&family=Roboto&family=Roboto+Mono&family=Roboto+Slab&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="current.css">
+   <link rel="stylesheet" href="remainder.css">
+   
+<style>
+  body {
+    background: -o-linear-gradient(45deg, #959fd0, transparent);
+    background: linear-gradient(45deg, #959fd0, transparent)
+  }
+</style>
+  </head>
+  <body>
+
+<h1>Most important Emacs commands</h1>
+<a href="index.html">Back to index</a>
+<p class="small">Keep in mind that this page was created from a simple markdown-to-html ruby program called <code>rdiscount</code></p>
+<ul>
+<li>Switch cursor to <em>another window</em> - <code>C-x o</code></li>
+<li>Switch buffers - <code>C-x left</code>, <code>C-x right</code>, list them all with <code>C-x C-b</code>, kill one with <code>C-x k</code></li>
+<li>Delete <em>all other windows</em> - <code>C-x 1</code></li>
+<li>Delete this window - <code>C-x 0</code></li>
+<li>Split window above and below - <code>C-x 2</code></li>
+<li>Split window side by side - <code>C-x 3</code>
+
+<blockquote><p>This can be done a bunch of times to create a bunch of small skinny windows</p></blockquote></li>
+<li>Read a file into Emacs - <code>C-x C-f</code>
+
+<ul>
+<li>This can create a new file as well</li>
+<li>Type tab to see potential files to open</li>
+</ul>
+</li>
+<li>Save a file to disk - <code>C-x C-s</code>
+
+<ul>
+<li>Save all files! - <code>C-x s</code></li>
+</ul>
+</li>
+<li>Go to line <code>M-g g</code></li>
+<li>Go to char <code>M-g c</code>
+
+<ul>
+<li>Back to indentation <code>M-m</code></li>
+</ul>
+</li>
+</ul>
+
+
+<hr />
+
+<h2>Moving around</h2>
+
+<blockquote><p>We know how to move around character by character <code>C-f</code> and <code>C-b</code>
+- Words - <code>M-b</code> and <code>M-f</code> - <code>Ctrl-left</code> and <code>Ctrl-right</code> also work
+- Lines - <code>C-a</code> - beginning of line, <code>C-e</code> - end of line
+- Sentences - <code>M-a</code> and <code>M-e</code>
+- Paragraphs - <code>M-{</code>, <code>M-}</code> -
+In windows terms it's <code>Alt-Shift-[</code> or <code>Alt-Shift-]</code></p></blockquote>
+
+<ul>
+<li>Buffer beginning and end - <code>M-&lt;</code>, <code>M-&gt;</code></li>
+</ul>
+
+
+<hr />
+
+<h2>Practical uses to learn</h2>
+
+<h3>How to switch windows, cut/kill a line and yank to other window</h3>
+
+<p><code>C-o</code>, then <code>C-k</code> to kill to end of line.
+Then <code>C-o</code>, <code>M-&gt;</code> to buffer end, then <code>C-y</code> to yank it back.</p>
+
+<p>Let's try it.</p>
+
+<p>Starting in Windows PowerShell 5.0, results of the <code>Get-Command</code> cmdlet display a Version column by default. A new Version property has been added to the CommandInfo class.</p>
+
+<pre><code>`Get-Command` gets its data directly from the command code, unlike `Get-Help`, which gets its information from help topics.
+</code></pre>
+
+<h2>It worked!</h2>
+
+<h3>How to search for a word or regex</h3>
+
+<ul>
+<li><code>C-s</code> search forward, <code>C-r</code> search backward.</li>
+<li><code>C-M-s</code> and <code>C-M-r</code> for regex search (back and forth respectively)
+
+<blockquote><p>will beep when search gets to end of buffer.</p></blockquote></li>
+</ul>
+
+
+<h3>How to search in other file</h3>
+
+<blockquote><p>May need grep or some other tool
+- open (find) a file into another window - <code>C-x 4 f</code> - shows dialog on bottom of screen
+- "" in read-only mode - <code>C-x 4 r</code></p>
+
+<h4>Case-sensitive</h4>
+
+<p>When opening a file in a separate window, it is case sensitive.  If you're unsure of whether the file is capitalized or not, you can use <code>tab</code> to show the directory contents.  I believe there might be a way to turn case-sensitive <em>off</em></p></blockquote>
+
+<h3>How to navigate thru text with ease</h3>
+
+<p>Remember <code>M-f(b)</code> for words and <code>M-a(e)</code> for sentences.
+Page down using <code>C-v</code> and <code>M-v</code> - (Sometimes <code>C-v</code> is set to paste, check terminal for settings.)
+<abbr title="abbreviation">abbr</abbr>s work, and most editors can do syntax highlighting for both the <code>.md</code> syntax and the <code>html</code> syntax.  So you can use <code>code</code> or <code>code</code></p>
+
+<h3>How to take <code>.md</code> file and convert to <code>.html</code></h3>
+
+<p>There are a few <code>cli</code> tools that allow you to do this.  For this demo I'm going to use <code>rdiscount</code></p>
+
+<footer>This page was made inside <b>Emacs</b> inside <b>WSL/Ubuntu</b> inside <b>ConEmu</b> terminal emulator.</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
+  </body>
+  </html>

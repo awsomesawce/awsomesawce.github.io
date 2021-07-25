@@ -77,8 +77,6 @@
         My top 4 repositories I'm currently developing in are:
         <span class="small">(some might be private)</span>
       </p>
-    </div>
-    <div class="container">
       <ul>
         <li><a href="https://awsomesawce.github.io">This one</a></li>
         <li>
@@ -93,27 +91,21 @@
         </li>
 	      <li><a href="https://github.com/awsomesawce/my-dotfiles">My dotfiles repo</a>, which is just a collection of my dotfiles I use in Linux/Windows on a daily basis.  <i>Constantly</i> updated and maintained.</li>
 	<li><a href="https://github.com/awsomesawce/mdbook_test">mdbook_test</a>, which is a test of the <code>MDBook</code> software available from <b>Arch Linux</b>'s official <code>pacman</code> repository.</li>
-      <li class="bold">
-	  <a href="https://github.com/awsomesawce">my github profile</a>
-      </li>
       </ul>
       <p class="small">
         Be aware this site is under <i>constant development</i>. It can and
         <i>will</i> change over time.
       </p>
-      <!-- Uninteresting updates
       <p class="small">
         I am updating this inside the terminal by using the curl command and
         outputting it to vi.
       </p>
-      -->
       <p class="small">
         Here is another update directly from MSYS2's Emacs on my laptop. They
         say <b>Vim</b> is the best editor, even better than editors like
         <b>Visual Studio Code</b>. <b>Vim</b> has been around for a long time
         and is highly customizable. And so is <b>Emacs</b>.
       </p>
-      <h2>Command-line working</h2>
       <p>
         Basically I'm practicing working in the command-line. There's a ton of
         information to consume, and it can be easy to fry your brain, but when I

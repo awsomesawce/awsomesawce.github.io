@@ -7,7 +7,12 @@
   "author": "Carl C <69673640+awsomesawce@users.noreply.github.com>",
   "license": "MIT",
   "private": false,
+  "scripts": {
+    "test": "echo \"This is a test\"",
+    "convindex": "npx markdown-it index.html"
+  },
   "dependencies": {
-    "jquery": "^3.6.0"
+    "jquery": "^3.6.0",
+    "markdown-it": "^12.1.0"
   }
 }

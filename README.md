@@ -5,26 +5,12 @@
 
 > Updates coming soon!
 
-## Most important repos of mine
+## Repos
 
 - [scripts-pwsh](https://github.com/awsomesawce/scripts-pwsh)
 - [my-dotfiles](https://github.com/awsomesawce/my-dotfiles)
 
-
-## Welcome to my GitHub Pages site!
-
-This is a test project.  Currently I am hand-writing each page and each post.  I'm **not** using *any* framework at this time (except Bootstrap CDN).  Although I have been experimenting with **Hugo** and some different **npm** packages and dependencies.  I like **Hugo** because it's extremely fast, but I still need to learn more.  
-
-## Current Global Yarn executables
-I have installed some **Yarn** global executables.
-* nodemon
-* angular-cli
-* serve
-* lessc - a global executable to convert `less` files into `.css` files
-* sass - a global executable to convert `.scss` or `.sass` files into `.css` files
-
 ## To-do
 
-- [ ] Implement some sort of framework, whether it be `npx`, `hugo`, `hexo`, or `jekyll`, or even `gatsby`
+- [ ] Implement site as a framework, probably `hugo` or `mdbook`
 - [x] Create posts directory
-- [ ] Use `html imports` to import components you use often, like <b>navbars</b>

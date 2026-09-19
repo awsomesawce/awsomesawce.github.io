@@ -1,0 +1,6 @@
+title: Carl Capodice
+description: Tooling, systems, and notes on what I'm learning.
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title/
+
+# GitHub Pages builds this automatically on push — no local Ruby needed.

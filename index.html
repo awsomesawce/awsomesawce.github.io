@@ -136,7 +136,7 @@
     <div class="links">
       <a href="https://github.com/awsomesawce">github.com/awsomesawce</a>
       <a href="/blog/">blog</a>
-      <a href="mailto:you@example.com">email</a>
+      <span>awsomesawce [at] outlook [dot] com</span>
       <a href="#">resume</a>
     </div>
   </div>
@@ -168,54 +168,22 @@
 
     <div class="project">
       <div class="project-head">
-        <h3>MCP Server</h3>
-        <span class="project-links"><a href="#">repo</a></span>
+        <h3>ScoopCompletions</h3>
+        <span class="project-links"><a href="https://github.com/awsomesawce/PowerShellConfig">repo</a></span>
       </div>
       <p>
-        A Model Context Protocol server exposing a set of tools to an LLM
-        client — the kind of integration layer that lets an AI assistant act
-        on real systems instead of just talking about them.
+        A PowerShell module that finds and loads tab-completion scripts
+        installed by <a href="https://scoop.sh/">Scoop</a>, which doesn't
+        surface them on its own. The interesting part was performance —
+        recursing Scoop's <code>apps</code> directory picked up duplicate
+        completions from every installed version of a package, since each
+        app folder has a <code>current</code> junction pointing at the active
+        version alongside the real versioned folders. Targeting
+        <code>apps\*\current</code> directly instead of the whole tree fixed
+        the duplicates and was dramatically faster once I stopped fighting
+        PowerShell's wildcard path resolution.
       </p>
-      <div class="stack">stack <span>·</span> TypeScript / Node · MCP spec</div>
-    </div>
-
-    <div class="project">
-      <div class="project-head">
-        <h3>AI-Assisted CLI Tool</h3>
-        <span class="project-links"><a href="#">repo</a></span>
-      </div>
-      <p>
-        A command-line tool that wires an LLM into everyday scripting
-        workflows — built to explore where AI assistance is genuinely useful
-        in a terminal versus where it just adds latency.
-      </p>
-      <div class="stack">stack <span>·</span> TBD — fill in your actual language/libs</div>
-    </div>
-
-    <div class="project">
-      <div class="project-head">
-        <h3>Ledger — Task Tracker (React)</h3>
-        <span class="project-links"><a href="#">repo</a> · <a href="#">demo</a></span>
-      </div>
-      <p>
-        A tag-filterable to-do app with JSON import/export, built to get
-        comfortable with React state and component structure outside a
-        tutorial's guardrails.
-      </p>
-      <div class="stack">stack <span>·</span> React · JSON</div>
-    </div>
-
-    <div class="project">
-      <div class="project-head">
-        <h3>Deno CLI Task Tracker</h3>
-        <span class="project-links"><a href="#">repo</a></span>
-      </div>
-      <p>
-        A terminal-first task tracker with JSON/YAML import and export —
-        the CLI counterpart to Ledger, built to compare how the same problem
-        feels with a keyboard-only interface versus a UI.
-      </p>
-      <div class="stack">stack <span>·</span> Deno · TypeScript</div>
+      <div class="stack">stack <span>·</span> PowerShell</div>
     </div>
 
   </div>
@@ -223,18 +191,18 @@
 
 <section class="now">
   <div class="wrap">
-    <h2>currently</h2>
+    <h2>currently researching</h2>
     <ul>
-      <li>Comparing React, Preact, Astro, Next.js, and SolidJS starters side by side</li>
-      <li>Building out PowerShell modules — <em>Convenience</em> and a <em>PromptKit</em> I/O layer</li>
-      <li>Learning Perl and Python in parallel to see how each handles the same fundamentals</li>
+      <li>Comparing front-end frameworks side by side — React, Preact, Astro, Next.js, SolidJS</li>
+      <li>Nushell as a scripting/automation layer, migrating over from PowerShell</li>
+      <li>Learning Perl and Python in parallel to compare how each handles the same fundamentals</li>
     </ul>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
-    <a href="https://github.com/awsomesawce">github</a> · <a href="mailto:you@example.com">email</a>
+    <a href="https://github.com/awsomesawce">github</a> · <span>awsomesawce [at] outlook [dot] com</span>
     <div style="margin-top:8px; opacity:0.7">built by hand, no framework · updated 2026</div>
   </div>
 </footer>

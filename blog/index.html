@@ -1,0 +1,49 @@
+---
+layout: null
+title: Blog
+permalink: /blog/
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blog — Carl Capodice</title>
+<style>
+  :root{
+    --bg:#0d1117; --line:#232b36; --text:#dce3ea; --text-dim:#8b96a3;
+    --accent:#6fd08c; --accent-dim:#3f7a52;
+    --mono:"IBM Plex Mono","SFMono-Regular",Consolas,Menlo,monospace;
+    --sans:"IBM Plex Sans",-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0; background:var(--bg); color:var(--text); font-family:var(--sans); line-height:1.6}
+  .wrap{max-width:680px; margin:0 auto; padding:56px 24px 80px}
+  a{color:var(--accent)}
+  .back{font-family:var(--mono); font-size:13px; color:var(--text-dim); display:inline-block; margin-bottom:32px}
+  h1{font-family:var(--mono); font-size:28px; margin:0 0 32px}
+  .post{padding:20px 0; border-top:1px solid var(--line)}
+  .post:first-child{border-top:none}
+  .post a{font-size:17px; font-family:var(--mono)}
+  .post .date{font-family:var(--mono); font-size:12.5px; color:var(--text-dim); display:block; margin-top:4px}
+  .empty{color:var(--text-dim); font-size:15px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="/">&larr; back to home</a>
+  <h1># blog</h1>
+
+  {% if site.posts.size > 0 %}
+    {% for post in site.posts %}
+    <div class="post">
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      <span class="date">{{ post.date | date: "%B %-d, %Y" }}</span>
+    </div>
+    {% endfor %}
+  {% else %}
+    <p class="empty">Nothing posted yet — first one coming soon.</p>
+  {% endif %}
+</div>
+</body>
+</html>
